@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+    #wrapper,
+    .force-wide-design #wrapper {
+        padding: 0
+    }
+    .drawer-container .drawer {
+        display: none;
+    }
+    #wrapper #content .forumcategoryblock,
+    body.page-forum .threadlistsection,
+    #wrapper #content .pagnation.threadpagnation,
+    #wrapper #content .pagnation.postpagnation,
+    .threadlist.threadlist-regular {
+        width: 100vw;
+        overflow: hidden;
+    }
+    /*body.page-forum .threadlistsection .threadblock.has-seen.has-new-posts .threadmain{
+        max-width: calc(100% - 52px);
+        text-overflow: ellipsis;
+    }
+    .threadtitle{
+       max-width: calc(100% - 52px);
+    }*/
+    body.page-forum .forumblock .threadcount,
+    body.page-forum .forumblock .postcount {
+        display: none;
+    }
+    #wrapper #content .threadlist .threadblock .threadage,
+    #wrapper #content .threadlist .threadblock .postcount {
+        display: none;
+    }
+    #wrapper #content .pagnation.threadpagnation a.page.is-spacer,
+    #wrapper #content .pagnation.postpagnation a.page.is-spacer,
+    #wrapper #content .pagnation.threadpagnation a.page.is-spacer,
+    #wrapper #content .pagnation.postpagnation a.page:not(.is-active):not(.prevpage):not(.is-last):not(.nextpage) {
+        display: none;
+    }
+    #wrapper #content .pagnation.postpagnation a.page:nth-of-type(2) {
+        display: block!important;
+    }
+    #wrapper #content .postlist .postblock .postmain .postinner .postuser .background-image,
+    #wrapper #content .postlist .postblock .postmain .postinner .postuser .user-card,
+    .postrender .postinner>.postuser .postavatar {
+        display: none;
+    }
+    #wrapper #content .postlist .postblock .postmain .postinner .postuser {
+        height: 10px;
+        padding: 0;
+        top: 0px;
+        background: transparent;
+        border: none;
+        flex-shrink: initial;
+        position: absolute;
+    }
+    .postrender .postinner>.postuser .username {
+        padding: 0;
+        width: 200px;
+    }
+    .postblock.postblock-read .postcontent,
+    .postblock .postcontent {
+        position: relative;
+        max-width: 100vw;
+    }
+    #wrapper #content .postlist .forumpanel {
+        max-width: 100vw;
+    }
+    .threadreply .postinner>.postuser {
+        display: none;
+    }
+    #wrapper #content .postlist .forumpanel>.postmain .postfoot,
+    .navbar-toolbar .container .navbar-brand {
+        overflow-x: scroll;
+    }
+    .expandable,
+    .postrender .postinner .postbody {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
