@@ -88,6 +88,14 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .ql-container.ql-snow .ql-editor {
+        height: auto;
+        min-height: 50px;
+    }
+    .postblock .postfoot .right .votebuttons {
+        flex-basis: auto;
+        flex-shrink: 0;
+    }
     .threadreply .ql-container.ql-snow .ql-editor {
         min-height: 200px;
     }
