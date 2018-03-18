@@ -85,18 +85,39 @@
     }
     .expandable,
     .postrender .postinner .postbody {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding: 5px;
     }
     .ql-container.ql-snow .ql-editor {
         height: auto;
         min-height: 50px;
     }
+    .postblock .postfoot .left {
+        overflow: scroll;
+        justify-content: baseline;
+    }
+    .votes .votelist {
+        overflow: scroll;
+    }
+    .postblock .postfoot {
+        display: block;
+    }
     .postblock .postfoot .right .votebuttons {
         flex-basis: auto;
         flex-shrink: 0;
+        display: block;
+    }
+    .postblock .postfoot .right .votebuttons>span {
+        float: left;
+    }
+    .postblock .postfoot .right .votebuttons .votebutton img {
+        width: 25px;
+        height: auto;
     }
     .threadreply .ql-container.ql-snow .ql-editor {
         min-height: 200px;
+    }
+    .postblock .postfoot .right,
+    .postblock .postfoot .right>span {
+        display: block;
     }
 }
