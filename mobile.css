@@ -14,13 +14,17 @@
         width: 100vw;
         overflow: hidden;
     }
-    /*body.page-forum .threadlistsection .threadblock.has-seen.has-new-posts .threadmain{
-        max-width: calc(100% - 52px);
-        text-overflow: ellipsis;
+    /* body.page-forum .threadlistsection .threadblock.has-seen.has-new-posts .threadmain{
+        //max-width: calc(100% - 52px);
+        //text-overflow: ellipsis;
+    	word-wrap: break-word;
     }
     .threadtitle{
        max-width: calc(100% - 52px);
     }*/
+    body.page-forum .threadlistsection .threadblock .threadmain {
+        white-space: normal;
+    }
     body.page-forum .forumblock .threadcount,
     body.page-forum .forumblock .postcount {
         display: none;
@@ -54,6 +58,7 @@
     }
     .postrender .postinner>.postuser .username {
         padding: 0;
+        padding-left: 5px;
         width: 200px;
     }
     .postblock.postblock-read .postcontent,
@@ -71,9 +76,19 @@
     .navbar-toolbar .container .navbar-brand {
         overflow-x: scroll;
     }
+    #header .navbar-main.navbar.is-dark .navbar-brand .navbar-item.logo {}
+    .navbar.is-dark {
+        height: 85px;
+    }
+    #header #toolbar {
+        margin-left: 0;
+    }
     .expandable,
     .postrender .postinner .postbody {
         padding-left: 0;
         padding-right: 0;
+    }
+    .threadreply .ql-container.ql-snow .ql-editor {
+        min-height: 200px;
     }
 }
