@@ -124,4 +124,15 @@
         padding-left: 0px;
         padding-right: 0px;
     }
+    #nav-menu {
+        position: relative;
+        z-index: 11;
+    }
+    .dropdown .background,
+    .dropdown.is-mobile-modal .dropdown-menu {
+        pointer-events: none;
+    }
+    .dropdown-content {
+        pointer-events: none;
+    }
 }
