@@ -120,4 +120,8 @@
     .postblock .postfoot .right>span {
         display: block;
     }
+    body.force-wide-design #wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
