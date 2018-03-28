@@ -133,6 +133,6 @@
         pointer-events: none;
     }
     .dropdown-content {
-        pointer-events: none;
+        pointer-events: all;
     }
 }
