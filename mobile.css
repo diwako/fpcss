@@ -135,4 +135,7 @@
     .dropdown-content {
         pointer-events: all;
     }
+    .alert-component .dropdown-content {
+        height: auto;
+    }
 }
