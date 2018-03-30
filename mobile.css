@@ -138,4 +138,8 @@
     .alert-component .dropdown-content {
         height: auto;
     }
+    body.page-forum .threadlistsection .threadblock .threadmain .threadtitle {
+        max-height: 500px;
+        overflow: hidden;
+    }
 }
