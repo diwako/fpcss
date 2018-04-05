@@ -142,4 +142,18 @@
         max-height: 500px;
         overflow: hidden;
     }
+    #wrapper #content .forumcategoryblock .forumpanel {
+        display: flex;
+        flex-direction: column;
+    }
+    #wrapper #content .forumcategoryblock .forumpanel .forumlastpost {
+        max-height: 50px;
+    }
+    #wrapper #content .forumcategoryblock .forumpanel .forumicon {
+        display: flex;
+        position: absolute;
+    }
+    body.page-forum .forumblock .forumname {
+        padding-left: 56px;
+    }
 }
