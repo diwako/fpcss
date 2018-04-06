@@ -3,9 +3,6 @@
     .force-wide-design #wrapper {
         padding: 0
     }
-    .drawer-container .drawer {
-        display: none;
-    }
     #wrapper #content .forumcategoryblock,
     body.page-forum .threadlistsection,
     #wrapper #content .pagnation.threadpagnation,
@@ -148,6 +145,7 @@
     }
     #wrapper #content .forumcategoryblock .forumpanel .forumlastpost {
         max-height: 50px;
+        text-align: right;
     }
     #wrapper #content .forumcategoryblock .forumpanel .forumicon {
         display: flex;
@@ -155,5 +153,29 @@
     }
     body.page-forum .forumblock .forumname {
         padding-left: 56px;
+    }
+    .drawer-container>.drawer>.drawer-section:nth-of-type(2),
+    .drawer-container>.drawer>.drawer-section:nth-of-type(3),
+    .drawer-container>.drawer>.drawer-section:nth-of-type(4) {
+        display: none;
+    }
+    .drawer-container {
+        display: block;
+    }
+    .drawer-content>div>a.is-success>span {
+        display: block !important;
+    }
+    .drawer-container>.drawer {
+        display: none;
+    }
+    .threadlistsection .container .drawer-container>.drawer {
+        display: block;
+        flex-basis: 250px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        overflow: hidden;
+        padding-bottom: 2rem;
+        min-height: auto;
+        height: 169px;
     }
 }
