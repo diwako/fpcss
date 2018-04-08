@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+    html::before {
+        background-image: none !important;
+    }
     #wrapper,
     .force-wide-design #wrapper {
         padding: 0
@@ -12,13 +15,13 @@
         overflow: hidden;
     }
     /* body.page-forum .threadlistsection .threadblock.has-seen.has-new-posts .threadmain{
-        //max-width: calc(100% - 52px);
-        //text-overflow: ellipsis;
-    	word-wrap: break-word;
-    }
-    .threadtitle{
-       max-width: calc(100% - 52px);
-    }*/
+		//max-width: calc(100% - 52px);
+		//text-overflow: ellipsis;
+		word-wrap: break-word;
+	}
+	.threadtitle{
+	   max-width: calc(100% - 52px);
+	}*/
     body.page-forum .threadlistsection .threadblock .threadmain {
         white-space: normal;
     }
@@ -26,10 +29,104 @@
     body.page-forum .forumblock .postcount {
         display: none;
     }
+    /** **/
+    #wrapper #content {
+        border-left: none;
+        border-right: none;
+    }
+    .postrender .postinner>.postuser .postavatar {
+        display: block;
+        position: absolute;
+        margin: 0;
+        padding-left: 4px;
+        padding-top: 4px;
+        left: 0;
+        top: 0;
+        height: 35px;
+        width: 35px;
+        overflow: hidden;
+    }
+    .postrender .postinner>.postuser {
+        max-width: unset;
+    }
+    .postrender .postinner>.postuser .postavatar>img {
+        width: 35px !important;
+        height: auto !important;
+    }
     #wrapper #content .threadlist .threadblock .threadage,
     #wrapper #content .threadlist .threadblock .postcount {
         display: none;
     }
+    .postblock .postmain .postinner .postuser .background-image {
+        height: calc(100% - 40px);
+        margin-top: 40px;
+        width: 100vw;
+        opacity: 0.5;
+        background-size: 100vw auto;
+        z-index: 2;
+        display: block;
+        pointer-events: none;
+    }
+    .userlevel {
+        width: 100%;
+        text-align: right;
+    }
+    .userlevel::after {
+        position: absolute;
+        text-shadow: 1px 1px 4px #333;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: attr(title);
+        display: inline-block;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8) !important;
+    }
+    span.userlevel {
+        display: inline-block;
+        position: absolute;
+        top: auto;
+        right: auto;
+        left: 40px;
+        bottom: 2px;
+        height: 15px;
+        padding: 2px 6px;
+        text-shadow: none;
+        font-size: 0.6rem;
+        border-radius: 0;
+        z-index: -1;
+        opacity: 1;
+        width: 115px;
+        color: rgba(0, 0, 0, 0) !important;
+    }
+    #wrapper #content .postlist .forumpanel>.postmain .posthead {
+        height: 40px;
+    }
+    #wrapper #content .postlist .forumpanel>.postmain .posthead * {
+        position: relative;
+        display: inline;
+        z-index: 5;
+    }
+    #wrapper #content .postlist .postblock .postmain .postinner .postuser {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        top: 0px;
+        background: transparent;
+        border: none;
+        flex-shrink: initial;
+        position: absolute;
+    }
+    .ql-container.ql-snow .ql-editor {
+        height: auto;
+        min-height: 50px;
+        z-index: 3;
+        position: relative;
+    }
+    .ql-container.ql-snow .ql-editor postquote .body .expandable {
+        padding: 0.4rem;
+    }
+    /** **/
     #wrapper #content .pagnation.threadpagnation a.page.is-spacer,
     #wrapper #content .pagnation.postpagnation a.page.is-spacer,
     #wrapper #content .pagnation.threadpagnation a.page.is-spacer,
@@ -39,23 +136,12 @@
     #wrapper #content .pagnation.postpagnation a.page:nth-of-type(2) {
         display: block!important;
     }
-    #wrapper #content .postlist .postblock .postmain .postinner .postuser .background-image,
-    #wrapper #content .postlist .postblock .postmain .postinner .postuser .user-card,
-    .postrender .postinner>.postuser .postavatar {
+    #wrapper #content .postlist .postblock .postmain .postinner .postuser .user-card {
         display: none;
-    }
-    #wrapper #content .postlist .postblock .postmain .postinner .postuser {
-        height: 10px;
-        padding: 0;
-        top: 0px;
-        background: transparent;
-        border: none;
-        flex-shrink: initial;
-        position: absolute;
     }
     .postrender .postinner>.postuser .username {
         padding: 0;
-        padding-left: 5px;
+        padding-left: 40px;
         width: 200px;
     }
     .postblock.postblock-read .postcontent,
@@ -72,6 +158,8 @@
     #wrapper #content .postlist .forumpanel>.postmain .postfoot,
     .navbar-toolbar .container .navbar-brand {
         overflow-x: scroll;
+        z-index: 2;
+        position: relative;
     }
     #header .navbar-main.navbar.is-dark .navbar-brand .navbar-item.logo {}
     .navbar.is-dark {
@@ -83,10 +171,6 @@
     .expandable,
     .postrender .postinner .postbody {
         padding: 5px;
-    }
-    .ql-container.ql-snow .ql-editor {
-        height: auto;
-        min-height: 50px;
     }
     .postblock .postfoot .left {
         overflow: scroll;
