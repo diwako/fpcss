@@ -265,4 +265,9 @@
     #footbar .navbar-brand .alert-component:nth-of-type(4n) .mdi-account:before {
         content: "\F23B";
     }
+    #wrapper #content .pagnation.postpagnation.below {
+        position: sticky;
+        z-index: 50;
+        bottom: 50px;
+    }
 }
