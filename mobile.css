@@ -262,4 +262,7 @@
         min-height: auto;
         height: 169px;
     }
+    #footbar .navbar-brand .alert-component:nth-of-type(4n) .mdi-account:before {
+        content: "\F23B";
+    }
 }
