@@ -270,4 +270,7 @@
         z-index: 50;
         bottom: 50px;
     }
+    body.page-forum .threadlistsection .threadblock .threadmain a.threadsubforum {
+        height: 17px;
+    }
 }
