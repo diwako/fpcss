@@ -277,9 +277,9 @@
     #wrapper #content .postlist .postblock .postmain .postinner .postuser .user-card {
         display: block;
         opacity: 1.0;
-        pointer-events: all;
         box-shadow: none;
         background: none !important;
+        pointer-events: none
     }
     .postuser .user-card .user-card-toolbar {
         display: none;
