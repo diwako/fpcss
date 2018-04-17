@@ -67,11 +67,11 @@
         display: block;
         pointer-events: none;
     }
-    .userlevel {
+    .posterinfo.userlevel {
         width: 100%;
         text-align: right;
     }
-    .userlevel::after {
+    .posterinfo.userlevel::after {
         position: absolute;
         text-shadow: 1px 1px 4px #333;
         left: 0;
@@ -82,7 +82,7 @@
         text-align: center;
         color: rgba(255, 255, 255, 0.8) !important;
     }
-    span.userlevel {
+    .posterinfo.span.userlevel {
         display: inline-block;
         position: absolute;
         top: auto;
@@ -98,6 +98,9 @@
         opacity: 1;
         width: 130px;
         color: rgba(0, 0, 0, 0) !important;
+    }
+    .user-card-header .inner .userlevel {
+        display: none;
     }
     #wrapper #content .postlist .forumpanel>.postmain .posthead {
         height: 40px;
@@ -135,9 +138,6 @@
     }
     #wrapper #content .pagnation.postpagnation a.page:nth-of-type(2) {
         display: block!important;
-    }
-    #wrapper #content .postlist .postblock .postmain .postinner .postuser .user-card {
-        display: none;
     }
     .postrender .postinner>.postuser .username {
         padding: 0;
@@ -246,7 +246,8 @@
     .drawer-container {
         display: block;
     }
-    .drawer-content>div>a.is-success>span {
+    .drawer-content>div>a.is-success>span,
+    .page-forum.useroptions .drawer-container>.drawer {
         display: block !important;
     }
     .drawer-container>.drawer {
@@ -272,5 +273,25 @@
     }
     body.page-forum .threadlistsection .threadblock .threadmain a.threadsubforum {
         height: 17px;
+    }
+    #wrapper #content .postlist .postblock .postmain .postinner .postuser .user-card {
+        display: block;
+        opacity: 1.0;
+        pointer-events: all;
+        box-shadow: none;
+        background: none !important;
+    }
+    .postuser .user-card .user-card-toolbar {
+        display: none;
+    }
+    .postuser .user-card .user-card-header {
+        background: none;
+    }
+    .postuser .user-card .user-card-header a {
+        position: relative;
+        top: -24px;
+        left: 16px;
+        color: transparent;
+        text-shadow: none;
     }
 }
