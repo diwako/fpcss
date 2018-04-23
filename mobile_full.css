@@ -306,4 +306,7 @@
     .postmodtools .dropdown.is-active .dropdown-menu .dropdown-content .dropdown-item .icon {
         display: inline-flex !important;
     }
+    .postuser .user-card .user-card-header {
+        backdrop-filter: none !important;
+    }
 }
