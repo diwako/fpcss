@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+    body.force-wide-design #wrapper {
+        padding: 0;
+    }
+    body.page-forum .threadlistsection .threadblock .threadmain .threadtitle {
+        max-height: 500px;
+        overflow: hidden;
+    }
+    #wrapper #content .pagnation.threadpagnation.below,
+    #wrapper #content .pagnation.postpagnation.below {
+        position: sticky;
+        bottom: 50px;
+        z-index: 3;
+    }
+    .postblock .postfoot .left {
+        overflow: scroll;
+        justify-content: baseline;
+    }
+    .votes .votelist {
+        overflow: scroll;
+    }
+    .postblock .postfoot {
+        display: block;
+    }
+    .postblock .postfoot .right .votebuttons {
+        flex-basis: auto;
+        flex-shrink: 0;
+        display: block;
+    }
+    .postblock .postfoot .right .votebuttons>span {
+        float: left;
+    }
+    .postblock .postfoot .right .votebuttons .votebutton img {
+        width: 25px;
+        height: auto;
+    }
+    .threadreply .ql-container.ql-snow .ql-editor {
+        min-height: 200px;
+    }
+    .postblock .postfoot .right,
+    .postblock .postfoot .right>span {
+        display: block;
+    }
+    #wrapper #content .forumcategoryblock .forumcategoryheader {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    #wrapper #content .forumcategoryblock .forumcategoryblock .forumcategoryheader {
+        position: sticky;
+        top: 40px;
+        z-index: 99;
+    }
+    body.page-forum .forumblock .forumname .forumsubforums {
+        display: block;
+    }
+    body.page-forum .forumblock .forumlastpost {
+        white-space: unset;
+    }
+}
