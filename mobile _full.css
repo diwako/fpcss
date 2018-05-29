@@ -16,6 +16,10 @@
         overflow: scroll;
         justify-content: baseline;
     }
+    .votes {
+        overflow-x: scroll;
+        display: block;
+    }
     .votes .votelist {
         overflow: scroll;
     }
