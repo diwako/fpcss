@@ -9,7 +9,7 @@
     #wrapper #content .pagnation.threadpagnation.below,
     #wrapper #content .pagnation.postpagnation.below {
         position: sticky;
-        bottom: 50px;
+        bottom: 46px;
         z-index: 3;
     }
     .postblock .postfoot .left {
@@ -48,12 +48,12 @@
     #wrapper #content .forumcategoryblock .forumcategoryheader {
         position: sticky;
         top: 0;
-        z-index: 100;
+        z-index: 3;
     }
     #wrapper #content .forumcategoryblock .forumcategoryblock .forumcategoryheader {
         position: sticky;
         top: 40px;
-        z-index: 99;
+        z-index: 2;
     }
     body.page-forum .forumblock .forumname .forumsubforums {
         display: block;
