@@ -12,6 +12,9 @@
     bottom: 46px;
     z-index: 3;
   }
+  #header {
+    top: -32px;
+  }
   .postblock .postfoot .left {
     overflow: scroll;
     justify-content: baseline;
@@ -62,7 +65,7 @@
     white-space: unset;
   }
    :not(#footbar).navbar,
-  :not(#footbar).navbar>.container,
+   :not(#footbar).navbar>.container,
   .navbar-brand,
   .navbar-burger {
     min-height: 30px;
