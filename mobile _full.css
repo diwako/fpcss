@@ -71,6 +71,9 @@
     min-height: 30px;
     height: 30px;
   }
+   :not(#footbar).navbar>.container {
+    overflow-x: scroll;
+  }
   .navbar-footbar.navbar.is-primary .navbar-brand {
     height: 48px;
     min-height: 48px;
