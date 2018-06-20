@@ -72,4 +72,19 @@
     height: 48px;
     min-height: 48px;
   }
+  #drawerleft .subforum {
+    height: 50px;
+  }
+  #drawerleft .subforum .checkmark:before {
+    font-size: 30px;
+  }
+  #drawerleft .subforum .checkmark a img {
+    height: 40px;
+    width: 40px;
+  }
+  #drawerleft .subforum .checkmark a {
+    right: 50px;
+    padding-left: 55px;
+    font-size: 18px;
+  }
 }
