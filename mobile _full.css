@@ -60,6 +60,9 @@
   }
   body.page-forum .forumblock .forumname .forumsubforums {
     display: block;
+    left: -35px;
+    width: calc(100vw - 5px);
+    position: relative;
   }
   body.page-forum .forumblock .forumlastpost {
     white-space: unset;
@@ -92,5 +95,18 @@
     right: 50px;
     padding-left: 55px;
     font-size: 18px;
+  }
+  body.page-forum .forumblock .forumname .forumsubforums .subforum a {
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+  }
+  body.page-forum .forumblock .forumname .forumsubforums .subforum {
+    padding: 0;
+    display: block;
+    float: left;
+  }
+  body.page-forum .forumblock .forumname .forumsubforums .subforum:after {
+    content: "";
   }
 }
