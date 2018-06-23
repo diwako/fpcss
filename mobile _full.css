@@ -109,4 +109,11 @@
   body.page-forum .forumblock .forumname .forumsubforums .subforum:after {
     content: "";
   }
+  #wrapper #content .forumcategoryblock .forumpanel .forumlastpost .threadname,
+  #wrapper #content .forumcategoryblock .forumpanel .forumlastpost .username {
+    width: calc(100vw - 10px);
+    max-width: 100vw;
+    right: 40px;
+    position: relative;
+  }
 }
