@@ -6,15 +6,15 @@
     max-height: 500px;
     overflow: hidden;
   }
-  #wrapper #content .pagnation.threadpagnation.below,
-  #wrapper #content .pagnation.postpagnation.below {
+  /*#wrapper #content .pagnation.threadpagnation.below,
+    #wrapper #content .pagnation.postpagnation.below {
     position: sticky;
     bottom: 46px;
     z-index: 3;
-  }
-  #header {
+    }
+    #header {
     top: -32px;
-  }
+    }*/
   .postblock .postfoot .left {
     overflow: scroll;
     justify-content: baseline;
@@ -64,20 +64,20 @@
   body.page-forum .forumblock .forumlastpost {
     white-space: unset;
   }
-   :not(#footbar).navbar,
-   :not(#footbar).navbar>.container,
-  .navbar-brand,
-  .navbar-burger {
+  /*:not(#footbar).navbar,
+    :not(#footbar).navbar>.container,
+    .navbar-brand,
+    .navbar-burger {
     min-height: 30px;
     height: 30px;
-  }
-   :not(#footbar).navbar>.container {
+    }
+    :not(#footbar).navbar>.container {
     overflow-x: scroll;
-  }
-  .navbar-footbar.navbar.is-primary .navbar-brand {
+    }
+    .navbar-footbar.navbar.is-primary .navbar-brand {
     height: 48px;
     min-height: 48px;
-  }
+    }*/
   #drawerleft .subforum {
     height: 50px;
   }
