@@ -119,4 +119,10 @@
   #footbar {
     transform: none;
   }
+  #toolbar .level-left .level-item.is-hidden-mobile {
+    display: flex!important;
+  }
+  #header #toolbar .navbar-item.is-active {
+    display: none;
+  }
 }
