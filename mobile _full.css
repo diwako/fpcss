@@ -116,4 +116,7 @@
     right: 40px;
     position: relative;
   }
+  #footbar {
+    transform: none;
+  }
 }
