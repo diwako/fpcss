@@ -122,7 +122,15 @@
   #toolbar .level-left .level-item.is-hidden-mobile {
     display: flex!important;
   }
-  #header #toolbar .navbar-item.is-active {
-    display: none;
+  #header #toolbar .navbar-item.is-breadcrumb,
+  #header #toolbar .navbar-item {
+    display: flex!important;
+  }
+  #header #toolbar .navbar-item.is-active,
+  #header #toolbar .level-left span:nth-last-child(2) {
+    display: none!important;
+  }
+  #toolbar {
+    overflow-x: scroll;
   }
 }
