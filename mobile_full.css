@@ -118,6 +118,7 @@
   }
   #footbar {
     transform: none;
+    position: fixed!important;
   }
   #toolbar .level-left .level-item.is-hidden-mobile {
     display: flex!important;
