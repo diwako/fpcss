@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+  #wrapper {
+    overflow-y: unset !important;
+  }
   body.force-wide-design #wrapper {
     padding: 0;
   }
